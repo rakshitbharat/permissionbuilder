@@ -20,6 +20,7 @@ class PermissionBuilderServiceProvider extends ServiceProvider {
      * @return void
      */
     public function boot() {
+        require __DIR__ .'\..\Http\routes.php';
         Schema::defaultStringLength(191);
         $this->registerTranslations();
         $this->registerConfig();
