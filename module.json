@@ -1,0 +1,16 @@
+{
+    "name": "PermissionBuilder",
+    "alias": "permissionBuilder",
+    "description": "Worlds easiest permision builder",
+    "keywords": ["auth", "multi", "permision", "roles"],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Rakshitbharat\\PermissionBuilder\\Providers\\PermissionBuilderServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

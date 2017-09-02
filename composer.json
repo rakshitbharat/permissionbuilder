@@ -1,0 +1,21 @@
+{
+    "name": "rakshitbharat/permissionBuilder",
+    "description": "Worlds easiest permision builder",
+    "keywords": ["auth", "multi", "permision","roles"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rakshit Patel",
+            "email": "rakshitbharat@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "hesto/core": ">=1.0.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rakshitbharat\\PermissionBuilder\\": ""
+        }
+    }
+}
