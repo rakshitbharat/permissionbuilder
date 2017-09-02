@@ -6,30 +6,22 @@
 
 | Autoloaded Service Providers
 |--------------------------------------------------------------------------
-|
-| The service providers listed here will be automatically loaded on the
-| request to your application. Feel free to add your own services to
-| this array to grant expanded functionality to your applications.
-|
+The service providers listed here will be automatically loaded on the
+request to your application. Feel free to add your own services to
+this array to grant expanded functionality to your applications.
 ``` php
 'providers' => [
 Rakshitbharat\PermissionBuilder\Providers\PermissionBuilderServiceProvider::class,
 ```
-
-
 | Class Aliases
-|--------------------------------------------------------------------------
-|
-| This array of class aliases will be registered when this application
-| is started. However, feel free to register as many as you wish as
-| the aliases are "lazy" loaded so they don't hinder performance.
-|
+|-------------------------------------------------------------------------- 
+This array of class aliases will be registered when this application
+is started. However, feel free to register as many as you wish as
+the aliases are "lazy" loaded so they don't hinder performance.
 ``` php
 'aliases' => [
 'PermissionFunction' => Rakshitbharat\PermissionBuilder\ViewPermission\PermissionFunction::class,
 ```
-
-
 | URL Permission on Routes, Example
 |--------------------------------------------------------------------------
 ``` php
@@ -56,8 +48,10 @@ if (PermissionFunction::checkDeclaredPermissionView('userView_delete')) {
 
 | Check Route declaration for this module
 |--------------------------------------------------------------------------
-| Auth not found error
+Auth not found error
+
 | now it can be solved by adding middleware to code
+|--------------------------------------------------------------------------
 ``` php
 Route::group(['prefix' => 'admin', 'middleware' => ['web', 'admin_auth']
 ```
@@ -78,7 +72,7 @@ $masterMenus[] = [
 
 | @extends('admin.layouts.app')
 |--------------------------------------------------------------------------
-| Last set to add middleware check code
+Last set to add middleware check code
 ``` php
 PermissionFunction::checkDeclaredPermissionURL();
 ```
